@@ -1,0 +1,32 @@
+{
+  "name": "buymovietickets",
+  "version": "1.0.0",
+  "description": "booking movie tickets",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateusz",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-partials": "^0.3.0",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.5.5",
+    "node-sass": "^4.12.0",
+    "node-sass-middleware": "^0.11.0",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0"
+  }
+}

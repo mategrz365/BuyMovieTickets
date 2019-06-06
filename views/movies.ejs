@@ -1,0 +1,23 @@
+<% include ./partials/header %>
+<p class = "text_movie">W kinie <%=cinema.area%> aktualnie gramy:</p>
+<div class="movies_container">
+    <% cinema.movies.forEach(movie => { %>
+        <div class="movie_thumbnail">
+            <img class = "movie_img" src="<%= movie.cover%>" alt="cover">
+            <ul class = "movie">                       
+                <li class = "movie_title"><%= movie.title %> <i class="fas fa-star"></i><%=movie.rate%></li>
+                <li><%= movie.type%>, <i><%= movie.year %></i></li>                           
+                <li class="movie_description"><%= movie.description%></li> 
+                <li class="down">
+                    <form  action="/seats" method="post">
+                    <button class='btn' type="submit" name="movie_title" value="<%= movie.title %>" id="btn-link">Wybierz</button>
+                    </form>  
+                </li>                             
+             </ul>   
+        </div>           
+    <% }) %> 
+</div>
+
+<script src = "../js/logo.js" type="text/javascript"></script>
+
+

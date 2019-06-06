@@ -1,0 +1,18 @@
+<% include ./partials/header %>
+<div id="timer"></div>
+<div class="screen">EKRAN</div>
+<div id="seats"></div>
+<div id="price"></div>  
+<button id = 'btn_post' class="btn">Rezerwuj</button>
+<div class="prompt"></div>
+ 
+<script>
+    let cinema_rows = '<%= data_cinema.seats.rows%>';
+    let cinema_columns = '<%= data_cinema.seats.columns%>';
+  </script>
+  <script src = "../js/seats.js" type="text/javascript"></script>
+  <script src = "../js/timer.js" type="text/javascript"></script>
+  <script src = "../js/logo.js" type="text/javascript"></script>
+
+
+ 

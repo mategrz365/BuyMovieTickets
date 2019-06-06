@@ -1,0 +1,20 @@
+<% if (typeof errors =='object' && errors) { %>
+    <% errors.forEach(err => { %>
+        <li class= "err_msg"><%=err.msg %></li>
+    <%})%>
+    <% } %>
+
+<% if(success_msg != '') { %>
+    <li class= "success_msg"><%=success_msg %></li>
+<% } %>
+
+<% if(error_msg != '') { %>
+    <li class= "err_msg"><%=error_msg %></li>
+<% } %>
+
+<% if(error != '') { %>
+    <li class= "err_msg"><%=error %></li>
+<% } %>
+
+
+   

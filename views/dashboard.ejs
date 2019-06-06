@@ -1,0 +1,19 @@
+<% include ./partials/header %>
+<p class='add-top-margin'></p>Wybierz kino spośrod jednej z naszych lokalizacji:</p>
+<form action="/movies" method="POST">           
+        <label for="Rybnik" class='city'>
+                <input type="radio" id = "Rybnik" name="cinema" value="Rybnik" checked>
+                <img class = "check_img" src="../assets/check.png" alt="radio_btn">              
+            Rybnik</label>            
+        <label for="Katowice" class='city'>
+                <input type="radio" id = "Katowice" name="cinema" value="Katowice">
+                <img class = "check_img" src="../assets/check.png" alt="radio_btn">   
+            Katowice</label>            
+        <label for="Warszawa" class='city'>
+                <input type="radio" id = "Warszawa" name="cinema" value="Warszawa">
+                <img class = "check_img" src="../assets/check.png" alt="radio_btn">  
+            Warszawa</label>       
+        <input class = "btn" type="submit" value="Dalej">
+</form>
+
+<script src = "../js/logo.js" type="text/javascript"></script>

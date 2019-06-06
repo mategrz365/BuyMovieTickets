@@ -1,0 +1,22 @@
+          
+<h4 class = "logo_left"><a href="/">Stare kino</a><i class="fas fa-video small"></i></h4> 
+<form action="/users/register" class ="form_register" method="post">
+    <label class='label-top' for="email">E-mail:</label>
+    <input type="text" id = "email" name='email' value="<%= typeof email !='undefined' ? email : ''%>">
+    <label for="password">Hasło:</label>
+    <input type="password" id = "password" name='password' value="<%= typeof password !='undefined' ? password : ''%>">
+    <label for="password2">Potwierdź hasło:</label>
+    <input type="password" id = "password2" name='password2' value="<%= typeof password2 !='undefined' ? password2 : ''%>">
+    <input class = 'btn' type="submit" value="Zarejestruj się" id="log">
+</form>    
+<h5>Masz już konto? <a class = "link" href="/users/login">Zaloguj się</a></h5>    
+<% include ./partials/messages %>
+
+<script src = "../js/logo.js" type="text/javascript"></script>
+
+
+
+
+
+
+  

@@ -1,0 +1,10 @@
+<span class = "logo_left"><a href="/">Stare kino</a><i class="fas fa-video small"></i></span>   
+   <form action="/users/login" class ="form_login" method = "POST">
+        <label for="email" class = "email-label">E-mail:</label>
+        <input type="text" id = "email" name='email'>
+        <label for="password">Hasło:</label>
+        <input type="password" id = "password" name='password'>
+        <input class = "btn" type="submit" value="Zaloguj się" id="log">
+    </form>
+    <h5>Nie masz jeszcze konta? <a class = "link" href="/users/register">Zarejestruj się.</a></h5>    
+    <% include ./partials/messages %>
