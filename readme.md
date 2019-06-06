@@ -22,3 +22,6 @@ bcryptjs - zabezpieczenia hasła użytkownika,
 ejs - wyświetlanie widoków,
 mongoose - obsługa bazy danych,
 sendgrid - wysyłanie e-mail do użytkownika
+
+
+https://slides.com/mateuszgrzegorzek/deck
